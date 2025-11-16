@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* ← ВКЛЮЧАЕТ border-box ГЛОБАЛЬНО */
+}
+.car-container {
+  display: flex; /* ← Блоки в строку */
+  gap: 20px; /* ← Отступ между блоками */
+  flex-wrap: wrap; /* ← Перенос на следующую строку, если не помещаются */
+  justify-content: center; /* ← Центрируем по горизонтали */
+}
+
+/* Каждый блок — фиксированная ширина */
+.first,
+.second,
+.third {
+  width: 320px; /* ← Чтобы не вылезали */
+}
+.car {
+  width: 400px; /* Ширина блока — 400 пикселей */
+  height: 500px; /* Высота блока — 500 пикселей */
+  margin: 2px; /* Внешний отступ со всех сторон — 2px */
+  padding: 20px; /* Внутренний отступ — 20px */
+  border: solid 6px black; /* Чёрная сплошная рамка толщиной 6px */
+}
+.model {
+  font-size: 24px;
+}
+.year {
+  font-size: 18px;
+}
